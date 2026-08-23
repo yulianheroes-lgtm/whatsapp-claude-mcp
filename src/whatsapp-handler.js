@@ -67,7 +67,7 @@ export class WhatsAppHandler {
     const toolDefinitions = this.mcpServer.getTools();
 
     let response = await this.client.messages.create({
-      model: 'claude-3-5-sonnet-20241022',
+      model: 'claude-3-5-sonnet-20240620',
       max_tokens: 1024,
       tools: toolDefinitions,
       messages: messageHistory,
@@ -111,7 +111,7 @@ Use emojis appropriately to make conversations more engaging.`
 
       // Call Claude again with tool results
       response = await this.client.messages.create({
-        model: 'claude-3-5-sonnet-20241022',
+        model: 'claude-3-5-sonnet-20240620',
         max_tokens: 1024,
         tools: toolDefinitions,
         messages: messageHistory,
