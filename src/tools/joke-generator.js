@@ -6,7 +6,7 @@ import axios from 'axios';
 export const jokeGeneratorTool = {
   name: 'joke_generator',
   description: 'Generates a random joke by fetching from an external joke API. Perfect for entertaining users or lightening the mood!',
-  inputSchema: {
+  input_schema: {
     type: 'object',
     properties: {
       type: {
